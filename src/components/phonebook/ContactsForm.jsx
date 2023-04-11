@@ -1,33 +1,14 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { selectContacts } from 'components/redux/selectors';
-import { addContact } from '../redux/operations';
+import { selectContacts } from 'redux/contacts/selectors';
+import { addContact } from '../../redux/contacts/contactsOperations';
 import styled from 'styled-components';
 
 const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
-  gap: 10px;
-  & button {
-    background-color: #3973a796;
-    border: 1px solid grey;
-    color: antiquewhite;
-    border-radius: 10px;
-    &:hover,
-    :focus {
-      color: #3973a796;
-      background-color: antiquewhite;
-    }
-  }
-  & input {
-    background-color: antiquewhite;
-    border: 1px solid grey;
-    border-radius: 10px;
-    &:hover,
-    :focus {
-      border: 1px solid #3973a796;
-    }
-  }
+  margin-bottom: 5px;
+  gap: 5px;
+  font-weight: 700;
 `;
 
 const ContactsForm = () => {

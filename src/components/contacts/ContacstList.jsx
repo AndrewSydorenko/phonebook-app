@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteContact } from '../redux/operations';
-import { getFilteredContacts } from 'components/redux/selectors';
+import { deleteContact } from '../../redux/contacts/contactsOperations';
+import { getFilteredContacts } from 'redux/contacts/selectors';
 
 const StyledList = styled.ul`
   display: flex;
@@ -9,21 +9,14 @@ const StyledList = styled.ul`
   gap: 5px;
   padding-left: 0;
   & li {
+    font-weight: 700;
+    font-size: large;
     background-color: #3973a796;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
-  }
-  & button {
-    background-color: #3973a796;
-    border: 1px solid grey;
-    color: antiquewhite;
-    border-radius: 10px;
-    &:hover,
-    :focus {
-      color: #3973a796;
-      background-color: antiquewhite;
-    }
+    align-items: center;
+    padding-left: 10px;
   }
 `;
 

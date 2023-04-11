@@ -1,17 +1,6 @@
-import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
-import { setFilter } from '../redux/contactsSlice';
-import { selectFilter } from 'components/redux/selectors';
-
-const StyledInput = styled.input`
-  background-color: antiquewhite;
-  border: 1px solid grey;
-  border-radius: 10px;
-  &:hover,
-  :focus {
-    border: 1px solid #3973a796;
-  }
-`;
+import { setFilter } from '../../redux/contacts/contactsSlice';
+import { selectFilter } from 'redux/contacts/selectors';
 
 export const ContactsFilter = () => {
   const dispatch = useDispatch();
@@ -23,7 +12,7 @@ export const ContactsFilter = () => {
 
   return (
     <div>
-      <StyledInput value={filter} type="text" onChange={handleFilterUpdate} />
+      <input value={filter} type="text" onChange={handleFilterUpdate} />
     </div>
   );
 };
