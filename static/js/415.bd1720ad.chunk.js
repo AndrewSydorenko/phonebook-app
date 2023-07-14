@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkphonebook_app=self.webpackChunkphonebook_app||[]).push([[415],{5415:function(e,n,t){t.r(n),t.d(n,{default:function(){return c}});var i=t(184),o={container:{minHeight:"calc(100vh - 50px)",display:"flex",alignItems:"center",justifyContent:"center"},title:{fontWeight:500,fontSize:48,textAlign:"center"}};function c(){return(0,i.jsx)("div",{style:o.container,children:(0,i.jsx)("h1",{style:o.title,children:"Awesome Phone Book "})})}}}]);
+//# sourceMappingURL=415.bd1720ad.chunk.js.map
